@@ -130,6 +130,7 @@ class vt100_screen(Structure):
         ("_icon_name_len", c_size_t),
         ("_attrs", vt100_cell_attrs),
         ("_scrollback_length", c_int),
+        ("_scroll_offset", c_int),
         ("_parser_state", c_void_p),
         ("_hide_cursor", c_ubyte, 1),
         ("_application_keypad", c_ubyte, 1),
